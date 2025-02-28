@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background: url('file:///C:/Users/ASUS/OneDrive/Pictures/Saved%20Pictures/LearnEasy.png') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: absolute;
+            bottom: 50px;  /* ขยับปุ่มขึ้นจากด้านล่าง */
+            width: 100%;
+        }
+        .btn {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Lilita One', sans-serif;
+        }
+        .login {
+            background-color: #65BBF0;
+            color: white;
+        }
+        .login:hover {
+            background-color: #65BBF0;
+        }
+        .signup {
+            background-color: #3B5EAB;
+            color: white;
+        }
+        .signup:hover {
+            background-color: #3B5EAB;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn login" id="loginBtn">Login</button>
+        <button class="btn signup" id="signupBtn">Signup</button>
+    </div>
+</body>
+</html>
