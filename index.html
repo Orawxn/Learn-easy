@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background: url('file:///C:/Users/ASUS/OneDrive/Pictures/Saved%20Pictures/LearnEasy.png') no-repeat center center/cover;
+            font-family: 'Lilita One', sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            position: absolute;
+            bottom: 50px;
+            width: 100%;
+        }
+        .btn {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            border-radius: 21px; 
+            font-size: 36px; 
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: 'Lilita One', sans-serif;
+        }
+        .login {
+            background-color: #65BBF0;
+            color: white;
+        }
+        .login:hover {
+            background-color: #4a9bd6;
+        }
+        .signup {
+            background-color: #3B5EAB;
+            color: white;
+        }
+        .signup:hover {
+            background-color: #2a4c88;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn login" id="loginBtn">Log in</button>
+        <button class="btn signup" id="signupBtn">Sign up</button>
+    </div>
+
+    <script>
+        document.getElementById("loginBtn").addEventListener("click", function() {
+            window.location.href = "login.html";
+        });
+        document.getElementById("signupBtn").addEventListener("click", function() {
+            window.location.href = "signup.html";
+        });
+    </script>
+</body>
+</html>
