@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Signup</title>
+    <!-- ฟ้อนต์ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -23,18 +27,20 @@
             justify-content: center;
             gap: 20px;
             position: absolute;
-            bottom: 50px;  /* ขยับปุ่มขึ้นจากด้านล่าง */
+            bottom: 20px; 
             width: 100%;
+            transform: translateY(-20px); 
         }
         .btn {
-            width: 150px;
-            padding: 10px;
+            width: 165px;
+            height: 54px;
+            padding: 5px;
             border: none;
-            border-radius: 5px;
-            font-size: 18px;
+            border-radius: 15px;
+            font-size: 36px;
             cursor: pointer;
             transition: 0.3s;
-            font-family: 'Lilita One', sans-serif;
+            font-family: 'Lilita One', sans-serif; 
         }
         .login {
             background-color: #65BBF0;
@@ -54,8 +60,8 @@
 </head>
 <body>
     <div class="container">
-        <button class="btn login" id="loginBtn">Login</button>
-        <button class="btn signup" id="signupBtn">Signup</button>
+        <button class="btn login">Login</button>
+        <button class="btn signup">Signup</button>
     </div>
 </body>
 </html>
