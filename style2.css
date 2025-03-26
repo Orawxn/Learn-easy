@@ -1,70 +1,262 @@
-body {
-    font-family: Arial, sans-serif;
-    background: url('images/background8.png') no-repeat center center/cover;
-   
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Base Styles */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-.header {
-    text-align: center;
-    padding: 20px;
+body {
+    background-color: #ffffff;
+    color: #333;
 }
 
-.header-img {
-    display: block;
-    margin: 0 auto;
-    width: 100%; 
+.container {
     max-width: 1200px;
-    height: auto; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Search Bar */
+.search-container {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
 }
 
 .search-bar {
-    margin: 20px auto;
+    background-color: rgba(219, 234, 254, 0.8);
+    border-radius: 50px;
+    padding: 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .search-bar input {
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    width: 250px;
-}
-
-.continue {
-    background: #d8b3ff;
-    padding: 10px 20px;
+    background: transparent;
     border: none;
-    border-radius: 20px;
-    cursor: pointer;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    color: #6b7280;
 }
 
-.bx-cog {
-    font-size: 24px;
+.continue-btn {
+    background-color: #c084fc;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 500;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.continue-btn:hover {
+    background-color: #a855f7;
+}
+
+/* Course Section */
 .course-section {
-    text-align: center;
-    padding: 20px;
+    margin-top: 40px;
 }
 
+.course-section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0A1E3B;
+    margin-bottom: 20px;
+}
+
+/* Course Menu */
 .course-menu {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 
 .menu-btn {
-    background: #6bb3ff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    cursor: pointer;
+    background-color: #60a5fa;
     color: white;
-    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.menu-btn:hover {
+    background-color: #3b82f6;
+}
+
+/* Course Grid */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Course Card */
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+  width: 100%;
+  height: 180px; /* ปรับขนาดความสูงให้เหมาะสม */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ทำให้รูปภาพเต็มกรอบและไม่ผิดสัดส่วน */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.placeholder-image {
+    width: 50px;
+    height: 50px;
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-image i {
+    color: #9ca3af;
+    font-size: 24px;
+}
+
+.course-details {
+    padding: 20px;
+}
+
+.course-category {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 5px;
+}
+
+.course-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.course-level {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.course-rating {
+    color: #f59e0b;
+    margin-bottom: 15px;
+}
+
+.star {
+    font-size: 18px;
+}
+
+.star.empty {
+    color: #d1d5db;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.join-btn {
+    width: 100%;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+    background-color: #ea580c;
+}
+
+/* Settings Icon (if needed) */
+.settings-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #4b5563;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .course-menu {
+        flex-wrap: wrap;
+    }
+    
+    .course-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .search-bar input {
+        margin-bottom: 10px;
+    }
+    
+    .menu-btn {
+        width: 100%;
+    }
 }
