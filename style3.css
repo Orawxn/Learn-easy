@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-/*
- Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #f0f8ff;
+    background: linear-gradient(to bottom, #BBE1F2 0%, #F6ECBB 50%, #E3AAFF 100%);
 }
 
 .container {
@@ -18,20 +18,12 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-
-/* Header Styles */
-header {
-    background: linear-gradient(135deg, #4b9fe1 0%, #1e56a0 100%);
-    color: white;
-    padding: 30px 0;
-    margin-bottom: 20px;
-}
-
 header h1 {
-    font-size: 4rem;
+    font-size: 85px;
     font-weight: bold;
     color: #173458;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: "Lilita One", sans-serif;
 }
 
 /* Course Grid */
@@ -42,10 +34,9 @@ header h1 {
     margin-bottom: 40px;
 }
 
-/* Course Card */
 .course-card {
-    background-color: white;
-    border-radius: 10px;
+    background-color: White;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -57,44 +48,29 @@ header h1 {
 }
 
 .card-image {
-    height: 140px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 24px;
     position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Card Background Colors */
-.numbers-bg {
-    background-color: #2a4d7f;
-}
-
-.arithmetic-bg {
-    background-color: #2a4d7f;
-}
-
-.geometry-bg {
-    background-color: #2a4d7f;
-}
-
-.statistics-bg {
-    background-color: #2a4d7f;
-}
-
-/* Card Icons */
-.number-icons, .operation-icons, .geometry-icons, .statistics-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-.number-icons span, .operation-icons span, .geometry-icons span, .statistics-icons span {
-    font-size: 28px;
-    color: #f0f0f0;
-}
+/* Card Background Images */
+.numbers-bg {background: url('images/p1.png') center/cover; }
+.arithmetic-bg { background: url('images/p2.png') center/cover; }
+.geometry-bg { background: url('images/p3.png') center/cover; }
+.statistics-bg { background: url('images/p4.png') center/cover; }
+.measurement-bg { background: url('images/p5.png') center/cover; }
+.calculus-bg { background: url('images/p6.png') center/cover; }
+.algebra-bg { background: url('images/p7.png') center/cover; }
+.trigonometry-bg{ background: url('images/p8.png') center/cover; }
+.coordinate-bg{ background: url('images/p9.png') center/cover; }
+.probability-bg { background: url('images/p10.png') center/cover; }
+.matrices-bg { background: url('images/p11.png') center/cover; }
+.discrete-bg { background: url('images/p12.png') center/cover; }
 
 /* Card Content */
 .card-content {
@@ -102,7 +78,7 @@ header h1 {
 }
 
 .category {
-    color: #777;
+    color: #ACACAC;
     font-size: 14px;
     display: block;
     margin-bottom: 5px;
@@ -111,7 +87,7 @@ header h1 {
 h2 {
     font-size: 20px;
     margin-bottom: 5px;
-    color: #333;
+    color: #000000;
 }
 
 .level {
@@ -130,19 +106,20 @@ h2 {
 
 .rating {
     margin-bottom: 20px;
-    color: #ffc107;
+    color: #FFA135;
 }
 
 .join-btn {
     width: 100%;
     padding: 12px;
-    background-color: #ff6b35;
+    background-color: #FF7426;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 20px;
+    font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: "Roboto", sans-serif;
 }
 
 .join-btn:hover {
