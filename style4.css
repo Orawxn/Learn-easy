@@ -10,7 +10,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #BBE1F2 0%, #F6ECBB 50%, #E3AAFF 100%);
+    background: linear-gradient(to bottom, #adebf8 0%,  #ffffff 100%);
 }
 
 .container {
@@ -59,18 +59,10 @@ header h1 {
 }
 
 /* Card Background Images */
-.numbers-bg {background: url('images/p1.png') center/cover; }
-.arithmetic-bg { background: url('images/p2.png') center/cover; }
-.geometry-bg { background: url('images/p3.png') center/cover; }
-.statistics-bg { background: url('images/p4.png') center/cover; }
-.measurement-bg { background: url('images/p5.png') center/cover; }
-.calculus-bg { background: url('images/p6.png') center/cover; }
-.algebra-bg { background: url('images/p7.png') center/cover; }
-.trigonometry-bg{ background: url('images/p8.png') center/cover; }
-.coordinate-bg{ background: url('images/p9.png') center/cover; }
-.probability-bg { background: url('images/p10.png') center/cover; }
-.matrices-bg { background: url('images/p11.png') center/cover; }
-.discrete-bg { background: url('images/p12.png') center/cover; }
+.earth-bg {background: url('images/s1.png') center/cover; }
+.chemistry-bg { background: url('images/s2.png') center/cover; }
+.physics-bg { background: url('images/s3.png') center/cover; }
+.biology-bg { background: url('images/s4.png') center/cover; }
 
 /* Card Content */
 .card-content {
