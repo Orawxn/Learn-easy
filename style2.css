@@ -13,6 +13,10 @@ body {
     color: #333;
 }
 
+body {
+    background: linear-gradient(to right, #b7e3f7 15%, #f1c1ff 100%);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -121,6 +125,12 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+ 
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .course-image {
@@ -259,4 +269,29 @@ body {
     .menu-btn {
         width: 100%;
     }
+}
+
+/* setting */
+.settings-container {
+    display: flex;
+    justify-content: flex-end; /* จัดปุ่มไปทางขวา */
+    align-items: center; /* จัดปุ่มให้อยู่กลางในแนวตั้ง */
+    height: 10vh; /* ให้ container ใช้ความสูงของ viewport */
+}
+ 
+.settings-btn {
+    background-color: transparent; /* เอาฉากหลังสีฟ้าออก */
+    color: black; /* สีไอคอน */
+    border: none; /* ลบขอบ */
+    padding: 10px; /* ขนาดปุ่ม */
+    font-size: 40px; /* ขนาดของไอคอนฟันเฟือง */
+    cursor: pointer; /* แสดงว่าเป็นปุ่มที่สามารถคลิกได้ */
+    border-radius: 50%; /* ทำให้ปุ่มเป็นวงกลม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+a {
+    text-decoration: none; /* ลบเส้นใต้จากลิงก์ */
 }

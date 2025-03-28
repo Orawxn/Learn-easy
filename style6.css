@@ -1,0 +1,92 @@
+/* Background gradient */
+.gradient-bg {
+    background: linear-gradient(to bottom right, #90caf9, #e1bee7, #bbdefb);
+  }
+  
+  /* Cloud decorations */
+  .cloud {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+  
+  .cloud-1 {
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+    height: 10rem;
+    margin-left: -2.5rem;
+    margin-bottom: -2.5rem;
+  }
+  
+  .cloud-2 {
+    bottom: 5rem;
+    right: 0;
+    width: 15rem;
+    height: 15rem;
+    margin-right: -5rem;
+  }
+  
+  .cloud-3 {
+    top: 10rem;
+    left: 2.5rem;
+    width: 5rem;
+    height: 5rem;
+    opacity: 0.5;
+  }
+  
+  /* Profile icon */
+  .profile-icon {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form inputs */
+  .form-input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    background: linear-gradient(to right, #bbdefb, #e1bee7);
+    border: none;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  }
+  
+  /* Submit button */
+  .submit-button {
+    padding: 0.25rem 1rem;
+    background-color: #22c55e;
+    color: white;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #16a34a;
+  }
+  
+  .submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.5);
+  }
+  
+  /* Change links */
+  .change-link {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .change-link:hover {
+    text-decoration: underline;
+  }
