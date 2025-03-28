@@ -18,7 +18,7 @@ document.querySelector('.form-box.register .btn').addEventListener('click', asyn
     const username = document.querySelector('.form-box.register input[type="text"]').value;
     const password = document.querySelector('.form-box.register input[type="password"]').value;
 
-    const response = await fetch('https://urban-tribble-5ggp94qwvvq5fvxj-3000.app.github.dev/register', {
+    const response = await fetch('https://scaling-journey-q76pgwvgqv9rc9qgx-3000.app.github.dev/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ document.querySelector('.form-box.login .btn').addEventListener('click', async f
     const username = document.querySelector('.form-box.login input[type="text"]').value;
     const password = document.querySelector('.form-box.login input[type="password"]').value;
 
-    const response = await fetch('https://urban-tribble-5ggp94qwvvq5fvxj-3000.app.github.dev/login', {
+    const response = await fetch('https://scaling-journey-q76pgwvgqv9rc9qgx-3000.app.github.dev/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
