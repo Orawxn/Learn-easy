@@ -10,7 +10,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #adebf8 0%,  #ffffff 100%);
+    background: linear-gradient(to bottom, #ebe188 0%, #c3dbae 50%, #f4bebe 100%);
 }
 
 .container {
@@ -59,11 +59,12 @@ header h1 {
 }
 
 /* Card Background Images */
-.earth-bg {background: url('images/s1.png') center/cover; }
-.chemistry-bg { background: url('images/s2.png') center/cover; }
-.physics-bg { background: url('images/s3.png') center/cover; }
-.biology-bg { background: url('images/s4.png') center/cover; }
-
+.cat-bg {background: url('images/o5.png') center/cover; }
+.sandwich-bg { background: url('images/o6.png') center/cover; }
+.earthquake-bg { background: url('images/o7.png') center/cover; }
+.cactus-bg { background: url('images/o8.png') center/cover; }
+.computer-bg { background: url('images/o9.png') center/cover; }
+.tsunami-bg { background: url('images/o10.png') center/cover; }
 /* Card Content */
 .card-content {
     padding: 20px;
