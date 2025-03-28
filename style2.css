@@ -270,3 +270,28 @@ body {
         width: 100%;
     }
 }
+
+/* setting */
+.settings-container {
+    display: flex;
+    justify-content: flex-end; /* จัดปุ่มไปทางขวา */
+    align-items: center; /* จัดปุ่มให้อยู่กลางในแนวตั้ง */
+    height: 10vh; /* ให้ container ใช้ความสูงของ viewport */
+}
+ 
+.settings-btn {
+    background-color: transparent; /* เอาฉากหลังสีฟ้าออก */
+    color: black; /* สีไอคอน */
+    border: none; /* ลบขอบ */
+    padding: 10px; /* ขนาดปุ่ม */
+    font-size: 40px; /* ขนาดของไอคอนฟันเฟือง */
+    cursor: pointer; /* แสดงว่าเป็นปุ่มที่สามารถคลิกได้ */
+    border-radius: 50%; /* ทำให้ปุ่มเป็นวงกลม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+a {
+    text-decoration: none; /* ลบเส้นใต้จากลิงก์ */
+}
