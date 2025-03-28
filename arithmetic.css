@@ -30,10 +30,7 @@ body {
     height: auto;
     display: block;
 }
-body {
-    background-color: #ffffff;
-    color: #333;
-}
+
 /* Header styles */
 header {
     background-color: #d6e6ff;
