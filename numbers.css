@@ -1,18 +1,39 @@
-/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Sarabun', Arial, sans-serif;
+    font-family: "Mali", cursive;
 }
 
 body {
-    background-color: #d6e6ff;
-    position: relative;
-    min-height: 100vh;
-    overflow-x: hidden;
+    background-color: #ffffff;
+    color: #333;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+body {
+    background-color: #ffffff;
+    color: #333;
+}
 /* Header styles */
 header {
     background-color: #d6e6ff;
@@ -29,8 +50,9 @@ header {
 
 h1 {
     color: #2d2a54;
-    font-size: 3rem;
+    font-size: 65px;
     font-weight: bold;
+    font-family: "Lilita One", sans-serif;
 }
 
 /* Book with lightbulb icon */
@@ -38,17 +60,6 @@ h1 {
     position: relative;
     width: 150px;
     height: 120px;
-}
-
-.book {
-    position: absolute;
-    bottom: 0;
-    width: 100px;
-    height: 70px;
-    background-color: #f5d76e;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
 .book-page {
