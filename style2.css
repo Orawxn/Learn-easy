@@ -9,6 +9,10 @@
 }
 
 body {
+    background: linear-gradient(to right, #b7e3f7 15%, #f1c1ff 100%);
+}
+
+body {
     background-color: #ffffff;
     color: #333;
 }
@@ -121,6 +125,12 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .course-image {
