@@ -1,6 +1,3 @@
-// User data storage (in a real app, you'd use a database)
-let users = [];
-
 // Get the container that holds the forms
 const container = document.querySelector('.container');
 
@@ -15,33 +12,48 @@ document.querySelector('.login-btn').addEventListener('click', function() {
 });
 
 // Handle registration
-document.querySelector('.form-box.register .btn').addEventListener('click', function(event) {
+document.querySelector('.form-box.register .btn').addEventListener('click', async function(event) {
     event.preventDefault();
     const email = document.querySelector('.form-box.register input[type="email"]').value;
     const username = document.querySelector('.form-box.register input[type="text"]').value;
     const password = document.querySelector('.form-box.register input[type="password"]').value;
 
-    if (users.some(user => user.username === username)) {
-        alert('Username already taken.');
-    } else {
-        users.push({ email, username, password });
-        alert('Registered Successfully!');
+    const response = await fetch('https://scaling-journey-q76pgwvgqv9rc9qgx-3000.app.github.dev/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, username, password }),
+    });
+
+    const data = await response.json();
+    if (response.ok) {
+        alert(data.message);
         container.classList.remove('active'); // Switch back to login form after registration
+    } else {
+        alert(data.message);
     }
 });
 
 // Handle login
-document.querySelector('.form-box.login .btn').addEventListener('click', function(event) {
+document.querySelector('.form-box.login .btn').addEventListener('click', async function(event) {
     event.preventDefault();
     const username = document.querySelector('.form-box.login input[type="text"]').value;
     const password = document.querySelector('.form-box.login input[type="password"]').value;
 
-    const user = users.find(user => user.username === username);
+    const response = await fetch('https://scaling-journey-q76pgwvgqv9rc9qgx-3000.app.github.dev/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+    });
 
-    if (user && user.password === password) {
-        alert('Login Successfully!');
+    const data = await response.json();
+    if (response.ok) {
+        alert(data.message);
         window.location.href = 'course.html'; // Navigate to course.html
     } else {
-        alert('Invalid username or password.');
+        alert(data.message);
     }
 });

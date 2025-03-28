@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mali", cursive;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+/* Header styles */
+header {
+    background-color: #d6e6ff;
+    padding: 20px 40px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2d2a54;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: "Lilita One", sans-serif;
+}
+
+/* Book with lightbulb icon */
+.book-with-bulb {
+    position: relative;
+    width: 150px;
+    height: 120px;
+}
+
+.book-page {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background-color: #333;
+    box-shadow: 0 10px 0 #333, 0 20px 0 #333, 0 30px 0 #333;
+}
+
+.bulb {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-25%);
+    width: 50px;
+    height: 70px;
+    background-color: #ffeb3b;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+}
+
+.bulb-rays {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+}
+
+.bulb-rays::before, .bulb-rays::after {
+    content: '';
+    position: absolute;
+    background-color: #ffeb3b;
+}
+
+.bulb-rays::before {
+    top: 0;
+    left: 50%;
+    height: 30px;
+    width: 4px;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+.bulb-rays::after {
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 30px;
+    transform: translateY(-50%) translateX(-100%);
+}
+
+/* Action bar styles */
+.action-bar {
+    padding: 0 40px;
+    margin-bottom: 20px;
+}
+
+.save-button {
+    background-color: #2d2a54;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #3e3a74;
+}
+
+/* Main content styles */
+main {
+    padding: 20px 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.content-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-section {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.info-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.course-info p {
+    color: #666;
+}
+
+/* Bubble decorations */
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.bubble {
+    position: absolute;
+    background-color: rgba(144, 238, 144, 0.2);
+    border-radius: 50%;
+}
+
+.bubble-1 {
+    width: 50px;
+    height: 50px;
+    bottom: 10%;
+    left: 5%;
+}
+
+.bubble-2 {
+    width: 30px;
+    height: 30px;
+    bottom: 20%;
+    left: 15%;
+}
+
+.bubble-3 {
+    width: 70px;
+    height: 70px;
+    bottom: 30%;
+    right: 10%;
+}
+
+.bubble-4 {
+    width: 20px;
+    height: 20px;
+    bottom: 40%;
+    right: 20%;
+}
+
+.bubble-5 {
+    width: 40px;
+    height: 40px;
+    top: 70%;
+    left: 30%;
+}
+
+.bubble-6 {
+    width: 25px;
+    height: 25px;
+    top: 60%;
+    right: 25%;
+}
+
+.bubble-7 {
+    width: 60px;
+    height: 60px;
+    bottom: 15%;
+    right: 5%;
+}
+
+.bubble-8 {
+    width: 35px;
+    height: 35px;
+    top: 80%;
+    left: 10%;
+}
+
+.bubble-9 {
+    width: 45px;
+    height: 45px;
+    top: 75%;
+    right: 15%;
+}
+
+.bubble-10 {
+    width: 80px;
+    height: 80px;
+    bottom: 5%;
+    left: 40%;
+}
+
+.bubble-11 {
+    width: 15px;
+    height: 15px;
+    top: 65%;
+    left: 20%;
+}
+
+.bubble-12 {
+    width: 55px;
+    height: 55px;
+    bottom: 25%;
+    right: 30%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .book-with-bulb {
+        width: 100px;
+        height: 80px;
+    }
+    
+    .book {
+        width: 70px;
+        height: 50px;
+    }
+    
+    .bulb {
+        width: 35px;
+        height: 50px;
+    }
+    
+    .content-card {
+        padding: 20px;
+    }
+    
+    .info-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .course-info h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main, header, .action-bar {
+        padding: 15px;
+    }
+    
+    .save-button {
+        width: 100%;
+    }
+}
